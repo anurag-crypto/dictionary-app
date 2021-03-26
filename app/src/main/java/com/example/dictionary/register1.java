@@ -64,7 +64,7 @@ import java.nio.file.Files;
                 return;
                 }
                 if(password.length()<6){
-                    mPassword.setError("Password must be >= characters");
+                    mPassword.setError("Password must be greater than characters");
                     return;
                 }
 
@@ -88,7 +88,12 @@ import java.nio.file.Files;
 
             }
         });
-
+        mLoginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),login.class));
+            }
+        }) ;
 
 
 
