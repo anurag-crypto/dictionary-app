@@ -64,7 +64,7 @@ import java.nio.file.Files;
                 return;
                 }
                 if(password.length()<6){
-                    mPassword.setError("Password must be greater than characters");
+                    mPassword.setError("Password must be greater than 5 characters");
                     return;
                 }
 
